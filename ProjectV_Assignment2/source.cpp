@@ -5,10 +5,7 @@
 
 using namespace std;
 
-int sample_function()
-{
-    return 1;
-}
+
 
 struct STUDENT_DATA
 {
@@ -29,9 +26,15 @@ int main()
     vector<STUDENT_DATA> students;
 
     STUDENT_DATA student;
+
     while (file >> student.lastName >> student.firstName)
     {
         students.push_back(student);
+    }
+
+    for (STUDENT_DATA& student : students)
+    {
+        cout << "First Name: " << student.firstName << " Last Name: " << student.lastName << endl;
     }
 
     file.close();
