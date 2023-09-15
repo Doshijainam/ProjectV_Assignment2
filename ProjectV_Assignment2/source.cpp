@@ -15,6 +15,8 @@ struct STUDENT_DATA
 
 int main()
 {
+
+    cout << "THIS IS THE STANDARD SOURCE CODE" << endl;
     fstream file;
     file.open("StudentData.txt", ios::in);
 
